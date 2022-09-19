@@ -5,7 +5,7 @@ n = int(sys.stdin.readline())
 arr = []
 for _ in range(n):
     x, y = map(int, sys.stdin.readline().split())
-    arr.append((x, y))
+    arr.append((y, x))
 
 
 def quick_sort(arr):
@@ -24,6 +24,7 @@ def quick_sort(arr):
 
     return quick_sort(lesser_arr) + equal_arr + quick_sort(greater_arr)
 
+
 arr = quick_sort(arr)
 for elem in arr:
-    print(elem[0], elem[1])
+    print(elem[1], elem[0])
