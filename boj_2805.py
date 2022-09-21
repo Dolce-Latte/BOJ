@@ -16,6 +16,6 @@ while start <= end:
     if sum_of_cut_tree >= m:
         start = mid + 1
     else:
-        end = mid - 1 +124124kl
+        end = mid - 1
 
 print(end)
