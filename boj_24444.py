@@ -33,4 +33,3 @@ bfs(r)
 
 for v in visited[1:]:
     print(v)
-    
